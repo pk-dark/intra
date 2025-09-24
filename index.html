@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Intraneurals - Learn, Innovate, Succeed</title>
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="assets/logo.png" type="image/png">
+</head>
+<body>
+<div id="particles-js"></div>
+
+<!-- Navbar -->
+<nav>
+  <div class="logo">
+    <img src="assets/logo.png" alt="Intraneurals Logo">
+    <span class="company-name">Intraneurals Infotech</span>
+  </div>
+  <ul>
+    <h3><a href="login.html" class="login-btn">Login</a></h3>
+  </ul>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero" id="hero">
+  <div class="hero-content">
+    <h1>Welcome to <span class="highlight">"Intraneurals Infotech"</span></h1>
+    <p>Unlock your potential. Learn the latest technologies. Achieve your dream career in software & AI.</p>
+    <a href="login.html" class="cta-btn">Get Started</a>
+  </div>
+</section>
+
+<!-- Features Section -->
+<section class="features" id="features">
+  <h1>Why Choose Intraneurals?</h1>
+  <div class="feature-cards">
+    <div class="feature-card"><p1>Interactive Multi-Video </p1></div>
+    <div class="feature-card"><p2>Flipping Course Cards</p2></div>
+    <div class="feature-card"><p3>Responsive & Design</p3></div>
+    <div class="feature-card"><p4>Expert Trainers </p4></div>
+  </div>
+</section>
+
+<!-- About Section -->
+<section class="about" id="about">
+  <h1>About Us</h1>
+  <div class="about-content">
+    <img src="assets/logo.png" alt="Intraneurals Logo" class="about-logo">
+    <p>Intraneurals is your ultimate platform for learning software, AI, and cloud technologies. Our mission is to provide high-quality, practical courses with advanced UI/UX experience. Learn from industry experts and take your skills to the next level.</p>
+  </div>
+</section>
+
+<!-- Contact Form -->
+<section class="contact" id="contact">
+  <h1>Contact Us</h1>
+  <form action="https://formspree.io/f/your-form-id" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="_replyto" placeholder="Your Email" required>
+    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+    <button type="submit" class="cta-btn"><h2>Send Message</h2></button>
+  </form>
+</section>
+
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script src="script.js"></script>
+<script>
+particlesJS('particles-js', {
+  particles: { number:{value:120}, size:{value:3}, move:{speed:1}, color:{value:"#00dfff"}, line_linked:{enable:true,color:"#00dfff"} },
+  interactivity:{ events:{ onhover:{enable:true,mode:"repulse"} } }
+});
+</script>
+<footer class="site-footer">
+  <div class="footer-content">
+    <img src="assets/logo.png" alt="Intraneurals Logo" class="footer-logo">
+    <h3>Intraneurals</h3>
+    <p>Built by <strong>Intraneurals Infotech team</strong> | Designed by <strong>Praveen Kumar</strong></p>
+    <div class="footer-socials">
+      <a href="#"><i class="fab fa-linkedin"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-youtube"></i></a>
+    </div>
+    <p class="copyright">© 2025 Intraneurals. All Rights Reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>
+
