@@ -4,7 +4,7 @@ const users = [
    courses: ["course1"] },
   { username: "madhusri@intra", password: "madhu@neurals", 
    courses: ["course1"] },
-  { username: "ayyappan@intra", password: "ayyappan@neurals", 
+  { username: "ayyappa@intra", password: "ayyappa@neurals", 
    courses: ["course1"] },
   { username: "boompozhilan@intra", password: "boompozhilan@neurals", 
    courses: ["course1"] },
@@ -15,6 +15,12 @@ const users = [
   { username: "vishmitha@intra", password: "vishmitha@neurals", 
    courses: ["course1"] },
   { username: "joshwakalanithi@intra", password: "joshwa@neurals", 
+   courses: ["course1"] },
+  { username: "usha@intra", password: "usha@neurals",
+   courses: ["course1"] },
+  { username: "mahalakshmi@intra", password: "mahalakshmi@neurals",
+   courses: ["course1"] },
+  { username: "@intra", password: "@neurals",
    courses: ["course1"] },
 ];
 
@@ -117,6 +123,7 @@ function toggleMode(){
 }
 
 window.addEventListener('scroll',()=>{ const scrollTop=window.pageYOffset||document.documentElement.scrollTop; const particles=document.getElementById('particles-js'); if(particles) particles.style.transform=`translateY(${scrollTop*0.2}px)`; });
+
 
 
 
