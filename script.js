@@ -1,10 +1,19 @@
 // Users and Courses
 const users = [
-  { username: "selva@admin", password: "pass123", courses: ["course1","course2","course3","course4","course5","course6","course7","course8","course9"] },
-  { username: "student2", password: "pass456", courses: ["course2","course4","course5"] },
-  { username: "student3", password: "pass789", courses: ["course1","course3","course6"] },
-  { username: "student4", password: "pass321", courses: ["course4","course7","course8"] },
-  { username: "student5", password: "pass654", courses: ["course1","course5","course10"] }
+  { username: "selva@admin", password: "pass123",
+   courses: ["course1","course2","course3","course4","course5","course6","course7","course8","course9"] },
+  { username: "madhushree@intra", password: "madhu@neurals", 
+   courses: ["course1"] },
+  { username: "ayyappam@intra", password: "ayyappan@neurals", 
+   courses: ["course1"] },
+  { username: "bhoompozhilan@intra", password: "bhoom@neurals", 
+   courses: ["course1"] },
+  { username: "ragu@intra", password: "ragu@neurals",
+   courses: ["course1"] },
+  { username: "abirami@intra", password: "abi@neurals", 
+   courses: ["course1"] },
+  { username: "@intra", password: "pass654", 
+   courses: ["course1"] },
 ];
 
 const courses = {
@@ -106,3 +115,4 @@ function toggleMode(){
 }
 
 window.addEventListener('scroll',()=>{ const scrollTop=window.pageYOffset||document.documentElement.scrollTop; const particles=document.getElementById('particles-js'); if(particles) particles.style.transform=`translateY(${scrollTop*0.2}px)`; });
+
