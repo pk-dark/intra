@@ -1,7 +1,7 @@
 // Users and Courses
 const users = [
   { username: "selva@admin", password: "pass123",
-   courses: ["course1","course2","course3","course4","course5","course6","course7","course8","course9"] },
+   courses: ["course1"] },
   { username: "madhushree@intra", password: "madhu@neurals", 
    courses: ["course1"] },
   { username: "ayyappam@intra", password: "ayyappan@neurals", 
@@ -115,4 +115,5 @@ function toggleMode(){
 }
 
 window.addEventListener('scroll',()=>{ const scrollTop=window.pageYOffset||document.documentElement.scrollTop; const particles=document.getElementById('particles-js'); if(particles) particles.style.transform=`translateY(${scrollTop*0.2}px)`; });
+
 
