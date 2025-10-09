@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login - Intraneurals</title>
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="assets/logo.png" type="image/png">
+</head>
+<body>
+<div id="particles-js"></div>
+
+<div class="login-container">
+  <img src="assets/logo.png" alt="Intraneurals Logo" class="login-logo">
+  <h1>Login</h1>
+  <p>Access your courses</p>
+  <input type="text" id="username" placeholder="Username.(eg:jeon@Intra)">
+  <input type="password" id="password" placeholder="Password.(provided by company)">
+  <button onclick="login()" class="cta-btn">Login</button>
+</div>
+
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script src="script.js"></script>
+<script>
+particlesJS('particles-js',{
+  particles:{
+    number:{value:500,density:{enable:true,value_area:500}},
+    color:{value:"#00dfff"},
+    shape:{type:"circle"},
+    opacity:{value:5,random:true},
+    size:{value:4,random:true},
+    line_linked:{enable:true,distance:130,color:"#00dfff",opacity:0.5,width:1},
+    move:{enable:true,speed:2,direction:"none",random:true,straight:false,out_mode:"out"}
+  },
+  interactivity:{
+    detect_on:"canvas",
+    events:{
+      onhover:{enable:true,mode:"grab"},
+      onclick:{enable:true,mode:"push"},
+      resize:true
+    },
+    modes:{
+      grab:{distance:2000,line_linked:{opacity:0.9}},
+      push:{particles_nb:4},
+      repulse:{distance:100,duration:0.4}
+    }
+  },
+  retina_detect:true
+});
+
+</script>
+</body>
+</html>
