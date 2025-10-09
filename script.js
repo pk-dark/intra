@@ -26,7 +26,14 @@ const users = [
 
 const courses = {
   "course1": { title:"Digital Marketing", img:"https://images.unsplash.com/photo-1519389950473-47ba0277781c?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", videos:["https://drive.google.com/file/d/1mLZjhm_DLku3-axuBpYJQiQAdUxrzmxY/preview","https://drive.google.com/file/d/1VZFZ2Q80vlzpLrc7wX1vzfAsnt0-w_LT/preview"], badge:"new" },
-  "course2": { title:"AI & ML", img:"https://images.unsplash.com/photo-1519389950473-47ba0277781c?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", videos:["https://youtu.be/-n9qiUaOzCI?si=ACbokam7nmXRHk7O"], badge:"upcoming" },
+  "course2": {
+  title: "AI & ML",
+  img: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  videos: [
+    "https://www.youtube.com/embed/-n9qiUaOzCI"
+  ],
+  badge: "upcoming"
+  },
   "course3": { title:"UI/UX Design", img:"https://images.unsplash.com/photo-1519389950473-47ba0277781c?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", videos:["https://drive.google.com/file/d/VIDEO_ID_4/preview"], badge:"upcoming" },
   "course4": { title:"Cloud Security", img:"https://source.unsplash.com/400x300/?cloud,security", videos:["https://drive.google.com/file/d/VIDEO_ID_5/preview"], badge:"upcoming" },
   "course5": { title:"Data Science", img:"https://source.unsplash.com/400x300/?data,science", videos:["https://drive.google.com/file/d/VIDEO_ID_6/preview"], badge:"upcoming" },
@@ -123,6 +130,7 @@ function toggleMode(){
 }
 
 window.addEventListener('scroll',()=>{ const scrollTop=window.pageYOffset||document.documentElement.scrollTop; const particles=document.getElementById('particles-js'); if(particles) particles.style.transform=`translateY(${scrollTop*0.2}px)`; });
+
 
 
 
