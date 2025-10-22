@@ -2,6 +2,8 @@
 const users = [
   { username: "selva@admin", password: "founder@intra",
    courses: ["course1"] },
+  { username: "sandhiya@intra", password: "sandhiya@neurals",
+   courses: ["course1"] },
   { username: "madhusri@intra", password: "madhu@neurals", 
    courses: ["course1"] },
   { username: "ayyappa@intra", password: "ayyappa@neurals", 
@@ -123,6 +125,7 @@ function toggleMode(){
 }
 
 window.addEventListener('scroll',()=>{ const scrollTop=window.pageYOffset||document.documentElement.scrollTop; const particles=document.getElementById('particles-js'); if(particles) particles.style.transform=`translateY(${scrollTop*0.2}px)`; });
+
 
 
 
