@@ -22,7 +22,7 @@ const users = [
    courses: ["course1"] },
   { username: "mahalakshmi@intra", password: "mahalakshmi@neurals",
    courses: ["course1"] },
-  { username: "@intra", password: "@neurals",
+  { username: "prem@intra", password: "prem@neurals",
    courses: ["course1"] },
 ];
 
@@ -125,6 +125,7 @@ function toggleMode(){
 }
 
 window.addEventListener('scroll',()=>{ const scrollTop=window.pageYOffset||document.documentElement.scrollTop; const particles=document.getElementById('particles-js'); if(particles) particles.style.transform=`translateY(${scrollTop*0.2}px)`; });
+
 
 
 
